@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Merienda');
+@import url('https://fonts.googleapis.com/css?family=Lato|Merienda');
+
+body{
+    margin: 0 auto;
+    padding: 0 auto;
+}
+/* ------------Welcome page--------- */
+.welcome{
+    width:100%;
+    height: 100vh;
+    background-image: url('../img/welcome-bk.gif');
+    background-position: center;
+   background-size: cover;
+   background-attachment: fixed;
+}
+.welcome-holder{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+.self-port{
+    height: 250px;
+    display: none;
+}
+.welcome-holder .welcome-text{
+    position: relative;
+    top: 420px;
+}
+.welcome-text{
+    color: #fff;
+   font-size: 3em;
+   text-align: center;
+   font-family: 'Lato', sans-serif;
+}
+.ashkan{
+    font-size: 1em;
+    color: #e31a6d;
+    font-family: 'Merienda', cursive;
+}
+.btn{
+    margin-top: 10px;
+    height: 50px;
+    width: 130px;
+    color: #fff;
+    background-color:#242424;
+    font-family: 'Merienda', cursive;
+    font-size: 1em;
+    transition: all 0.6s;
+}
+.btn:hover{
+    border: 1px solid #fff;
+    background-color: #404040;
+    color: #fff;
+    transition: all 0.6s;
+}
+/* --------End of welcome---------- */
+/* --------Nav---------- */
+
+/* --------End Nav---------- */
+/* --------Home---------- */
+
+
+/* --------End of home---------- */
+/* --------Media--------- */
+
+@media screen and (max-width:758px){
+    .self-port{
+        display: block;
+        z-index: 10;
+        height: 250px;
+        transition: all0.5s ease;
+    }
+    .welcome-holder .welcome-text{
+        position: relative;
+        top: 130px;
+    }
+}
