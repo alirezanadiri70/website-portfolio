@@ -12,15 +12,65 @@
 <!-- -----------BODY----------------- -->
 <body>
     <!-- ---------- welcome page--------- -->
-    <div class="welcome">
+    <div id="welcome"class="welcome">
         <div class="welcome-holder">
             <img class="self-port"src="img/id.png" alt="">
             <span class="welcome-text">Hello, My Name Is <span class="ashkan">Ashkan Nadiri.</span></span>
             <span class="welcome-text">I'm A Web Developer</span>
-            <button class="welcome-text btn">Let's Start</button>
+            <a href="#about">
+                <button class="welcome-text btn">Let's Start</button>
+            </a>
+            
         </div>
     </div>
-    <div class="home">
-
-    </div>
+    <!-- --------------Nav Bar-------------- -->
+    <nav class="navbar navbar-default">
+            <!-- <div class="line-div"></div> -->
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button class="navbar-toggle collapsed" data-toggle="collapse" type="button" data-target="#navbar">
+                        <span class="sr-only">Toggle Navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="#home">
+                        <img class="logo"src="img/logo.png" alt="logo">
+                    </a>
+                </div>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class= "active">
+                        <a href="#welcome">HOME<span class = "sr-only">(current)</span></a>
+                    </li>
+                    <li>
+                        <a href="#about">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio">PORTFOLIO</a>
+                    </li>
+                    <li>
+                        <a href="#contact">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="line-div"></div>
+    </nav>
+    <section id="about"class="about">
+        <div class="about-row">
+            <span class="text-uppercase about-text">about</span>
+            <div class="about-underline"></div>
+        </div>
+        <div class="bio">
+            <div  class="bio-holder">
+                <img class="portrait"src="img/id.png" alt="">
+                <span class="bio-text">I am currently student at <a href="htttps://geekwiseacademy.com">Geekwise Academy</a> in Fresno, CA.<br> I have serious passion for designing and turning ideas to reality by creatingI have serious passion for designing and turning ideas to reality by creating intuitive, dynamic user experiences.<br><span>Let's make something special.</span></span>
+                
+            </div>
+            <div class="skills">
+                
+            </div>
+        </div>
+    </section>
 </body>

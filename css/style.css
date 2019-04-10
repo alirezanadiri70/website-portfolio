@@ -4,6 +4,7 @@
 body{
     margin: 0 auto;
     padding: 0 auto;
+    min-width: 430px;
 }
 /* ------------Welcome page--------- */
 .welcome{
@@ -44,7 +45,7 @@ body{
     height: 50px;
     width: 130px;
     color: #fff;
-    background-color:#242424;
+    background-color:transparent;
     font-family: 'Merienda', cursive;
     font-size: 1em;
     transition: all 0.6s;
@@ -57,14 +58,114 @@ body{
 }
 /* --------End of welcome---------- */
 /* --------Nav---------- */
+.navbar-default{
+    background-color: #e6e6e6;
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    border-radius: 0;
+}
+.line-div{
+    height: 3px;
+    width: 100%;
+    background-color: #5e81c8;
+}
+.logo{
+    width: 100px;
+}
+.nav li a:hover{
+    background-color:transparent;
+} 
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+    color: #fff;
+    background-color: rgba(17,17,17,.5);
+}
+navbar-default .navbar-nav>li>a{
+    color: #fcfcfc;
+    text-shadow: 1px 1px 2px #0a0a0a;
+}
+
 
 /* --------End Nav---------- */
 /* --------Home---------- */
-
-
+.about{
+    z-index: -1;
+    height: 100vh;
+    background-color: #f2f2f2;
+}
+.about-row{
+    position: relative;
+    left: 10px;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.about-text{
+    color: #1a232f;
+    font-size: 3em;
+}
+.about-underline{
+    height: 2px;
+    width: 90px;
+    background-color: #1a232f; 
+}
+.bio{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center
+}
+.bio-holder{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    position: relative;
+    top: 90px;
+    left: 150px;
+    
+}
+.portrait{
+    height: 250px;
+    width: 450px;
+}
+.bio-text{
+    width: 450px;
+    text-align: center;
+    font-size: 1.2em;
+}
+.bio-text > span{
+    color: blue;
+}
+.skills{
+    background-color: grey;
+    width: 600px;
+    height: 500px;
+    position: relative;
+    top: 100px;
+    right: 100px;
+}
 /* --------End of home---------- */
 /* --------Media--------- */
-
+@media screen and (max-width:439px){
+    .about-text,.about-underline{
+        position: relative;
+        left: -50px;
+    }
+    .bio-holder{
+        position: relative;
+        left: -20px;
+    }
+    .bio-text{
+        width: 250px;
+    }
+}
 @media screen and (max-width:758px){
     .self-port{
         display: block;
