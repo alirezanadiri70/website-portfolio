@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Merienda');
 @import url('https://fonts.googleapis.com/css?family=Lato|Merienda');
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text');
 html{
     scroll-behavior: smooth;
 }
@@ -112,13 +113,14 @@ navbar-default .navbar-nav>li>a{
     justify-content: center;
 }
 .about-text{
+    font-family: 'Crimson Text', serif;
     color: #1a232f;
     font-size: 3em;
 }
 .about-underline{
     height: 2px;
     width: 90px;
-    background-color: #1a232f; 
+    background-color:  #7a97d1; 
 }
 .bio{
     display: flex;
@@ -225,6 +227,48 @@ navbar-default .navbar-nav>li>a{
 }
 /* --------End of home---------- */
 /* ---------Portfolio---------- */
+.portfolio-row{
+    position: relative;
+    left: 10px;
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.portfolio-text{
+    color: #1a232f;
+    font-size: 3em;
+    font-family: 'Crimson Text', serif;
+}
+.portfolio-underline{
+    height: 2px;
+    width: 180px;
+    background-color:  #7a97d1; 
+}
+.art-work{
+    position: relative;
+    left: 100px;
+    top: 50px;
+    width: 90%;
+}
+.art-work > span, .art-work2 >span{
+    text-align:center;
+}
+.art{
+    width: 500px;
+    height: 400px;
+}
+.art-work2{
+    position: relative;
+    left: 110px;
+    width: 90%;
+}
+.art2{
+    width: 500px;
+    height: 400px;
+}
 /* ----------End of portfolio---- */
 /* --------Media--------- */
 @media  screen and (max-width:1250px){
