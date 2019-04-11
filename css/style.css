@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Merienda');
 @import url('https://fonts.googleapis.com/css?family=Lato|Merienda');
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 html{
     scroll-behavior: smooth;
 }
@@ -100,6 +102,7 @@ navbar-default .navbar-nav>li>a{
     z-index: -1;
     height: 1000px;
     background-color: #f2f2f2;
+
 }
 .about-row{
     position: relative;
@@ -112,13 +115,14 @@ navbar-default .navbar-nav>li>a{
     justify-content: center;
 }
 .about-text{
+    font-family: 'Crimson Text', serif;
     color: #1a232f;
     font-size: 3em;
 }
 .about-underline{
     height: 2px;
     width: 90px;
-    background-color: #1a232f; 
+    background-color:  #7a97d1; 
 }
 .bio{
     display: flex;
@@ -150,7 +154,7 @@ navbar-default .navbar-nav>li>a{
 }
 .skills{
     width: 40%;
-    height: 500px;
+    height: 550px;
     position: relative;
     top: 100px;
     right: 100px;
@@ -225,13 +229,242 @@ navbar-default .navbar-nav>li>a{
 }
 /* --------End of home---------- */
 /* ---------Portfolio---------- */
+.portfolio-row{
+    position: relative;
+    left: 10px;
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.portfolio-text{
+    color: #1a232f;
+    font-size: 3em;
+    font-family: 'Crimson Text', serif;
+    position: relative;
+    top: 30px;
+}
+.portfolio-underline{
+    height: 2px;
+    width: 180px;
+    background-color:  #7a97d1; 
+    position: relative;
+    top: 30px;
+}
+.work{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+.arts{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    top: 20px; 
+}
+.art{
+    width: 550px;
+    height: 350px;
+}
+.art2{
+    width: 500px;
+    height: 450px;
+}
+.work > span{
+    width: 80%;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.website{
+    display: flex;
+    flex-direction: row;
+    
+
+}
+/* -------petstore------- */
+.website1{
+    height: 400px;
+    width: 400px;
+    position: relative;
+    left:40px;
+    top: 20px;
+}
+.pet-store{
+    width: 600px;
+    height: 400px;
+    background-image: url('../img/petstore.png');
+    background-position: center;
+    background-size: cover;
+    transition: all 0.5s;
+    
+}
+.website1:hover a .pet-store,
+.website1:focus a .pet-store{
+    transform:  scale(1.2);
+    transition: all 0.5s ;
+}
+.website1::before {
+    content: "";
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(52, 73, 94, 80%);
+  }
+  
+  .website1:hover a .pet-store,
+  .website1:focus a .pet-store::before{
+    display: block;
+  }
+  .website1 a .pet-store span {
+    color: #7a97d1; /* Good thing we set a fallback color! */
+    font-family: sans-serif;
+    padding: 25%;
+    position: absolute;
+  }
+  .website1:hover a .pet-store span,
+  .website1:focus span {
+    display: block;
+}
+/* -------End of petstore------- */
+/* -------------website description------ */
+.website-tags{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    left: 200px;
+    top: 100px;
+    z-index: 10;
+
+}
+.project-name{
+    color: #e31a6d;
+    font-family: 'Merienda', cursive;
+    font-size: 19px;
+}
+.website-tags span:nth-child(4){
+    width: 250px;
+    text-align: center;
+    font-size: 19px;
+    font-family: 'Playfair Display', serif;
+
+}
+/* ------------ end of website description------ */
+/* -------restaurante------- */
+.website2{
+    height: 400px;
+    width: 400px;
+    position: relative;
+    left: 100px;
+    top: 50px;
+   
+}
+.restaurante{
+    width: 600px;
+    height: 400px;
+    background-image: url('../img/restaurante.png');
+    background-position: center;
+    background-size: cover;
+    transition: all 0.5s;
+    
+}
+.website2:hover a .restaurante,
+.website2:focus a .restaurante{
+    transform:  scale(1.2);
+    transition: all 0.5s ;
+}
+.website2::before {
+    content: "";
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(52, 73, 94, 0.75);
+  }
+  
+  .website2:hover a .restaurante,
+  .website2:focus a .restaurante::before{
+    display: block;
+  }
+/* -------End of estaurante------- */
 /* ----------End of portfolio---- */
+/* -------------contact------------ */
+.form{
+    width: 100%;
+    height: 500px;
+    background-color: #242424;
+}
+.form-holder{
+    box-sizing: border-box;
+    width: 500px;
+    height: 300px;
+    border: 1px solid white;
+    position: relative;
+    left: 33%;
+    top:15%;
+    box-shadow: 0 -20px 50px #000000;
+}
+/* ------------end of contact------------ */
+/* ---------------footer---------- */
+.footer{
+    width: 100%;
+    height: 150px;
+    background-color: #1a1a1a;
+    box-shadow: 0px -20px 50px #000000;
+    border-top: 1px solid #7a97d1;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+.up-btn{
+    background-color: #e31a6d;
+    color: #fff;
+    position: relative;
+    top: -10px;
+}
+.media{
+    position: relative;
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+}
+.media-logo{
+    color: #fff;
+    font-size: 3em;
+}
+.copy-right{
+    color:#e31a6d;
+    margin-top: 20px;
+}
+/* ---------------End of footer----- */
 /* --------Media--------- */
 @media  screen and (max-width:1250px){
     .bio{
         display: flex;
         
-        
+    }
+    .website1{
+        position: relative;
+        left: -90px;
+    }
+    .website2{
+        position: relative;
+        left: -250px;
+    }
+    .website-tags{
+        position: relative;
+        left: -30px;
     }
 }
 @media screen and (max-width:1204px){
@@ -242,7 +475,7 @@ navbar-default .navbar-nav>li>a{
 }
 @media screen and (max-width:970px){
     .about{
-        height: 1300px;
+        height: 1400px;
     }
     .skills{
         position: relative;
@@ -252,7 +485,33 @@ navbar-default .navbar-nav>li>a{
         display: flex;
         flex-direction: column;
     }
-
+    .art{
+        width: 400px;
+        height: 300px;
+    }
+    .art2{
+        width: 400px;
+        height: 300px;
+    }
+    .portfolio-underline{
+        margin-bottom: 30px;
+    }
+}
+@media screen and (max-width:880px){
+    .website{
+        display: flex;
+        flex-direction: column;
+    }
+    .website-tags{
+        position: relative;
+        top: -300px;
+        left: 170px;
+    }
+    .website2{
+        position: relative;
+        top: -210px;
+        left: 70px;
+    }
 }
 
 @media screen and (max-width:758px){
@@ -266,10 +525,31 @@ navbar-default .navbar-nav>li>a{
         position: relative;
         top: 130px;
     }
+    .skills{
+        position: relative;
+        left: 0px;
+        width: 80%;
+    }
+    .arts{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:630px){
+    .website-tags{
+        position: relative;
+        top: -80px;
+        left: px;
+    }
+    .website2{
+        position: relative;
+        left: -150px;
+        top: -40px;
+    }
 }
 @media screen and (max-width:439px){
     .about{
-        height: 1650px;
+        height: 1750px;
     }
     .about-text,.about-underline{
         position: relative;
@@ -295,7 +575,31 @@ navbar-default .navbar-nav>li>a{
         display: flex;
         flex-direction: column;
         position: relative;
-        top: 130px;
+        top: 150px;
         left: 90px;
+    }
+    .website-tags{
+        position: relative;
+        top:20px;
+        left: -20px;
+    }
+    .website2{
+        position: relative;
+        left: -200px;
+        top: 60px;
+    }
+   
+}
+@media screen and (max-width:400px){
+    .self-port{
+        position: relative;
+        left: -15px;
+    }
+    .welcome-text, .btn{
+        position: relative;
+        left: -15px;
+    }
+    .welcome-holder span:nth-child(3){
+        font-size: 2.5em;
     }
 }
