@@ -247,27 +247,31 @@ navbar-default .navbar-nav>li>a{
     width: 180px;
     background-color:  #7a97d1; 
 }
-.art-work{
-    position: relative;
-    left: 100px;
-    top: 50px;
-    width: 90%;
+.work{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
 }
-.art-work > span, .art-work2 >span{
-    text-align:center;
+.arts{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    top: 20px; 
 }
 .art{
-    width: 500px;
-    height: 400px;
-}
-.art-work2{
-    position: relative;
-    left: 110px;
-    width: 90%;
+    width: 550px;
+    height: 350px;
 }
 .art2{
     width: 500px;
-    height: 400px;
+    height: 450px;
+}
+.work > span{
+    width: 80%;
+    font-size: 16px;
+    text-align: justify;
 }
 /* ----------End of portfolio---- */
 /* --------Media--------- */
@@ -296,7 +300,14 @@ navbar-default .navbar-nav>li>a{
         display: flex;
         flex-direction: column;
     }
-
+    .art{
+        width: 400px;
+        height: 300px;
+    }
+    .art2{
+        width: 400px;
+        height: 300px;
+    }
 }
 
 @media screen and (max-width:758px){
@@ -309,6 +320,15 @@ navbar-default .navbar-nav>li>a{
     .welcome-holder .welcome-text{
         position: relative;
         top: 130px;
+    }
+    .skills{
+        position: relative;
+        left: 0px;
+        width: 80%;
+    }
+    .arts{
+        display: flex;
+        flex-direction: column;
     }
 }
 @media screen and (max-width:439px){
