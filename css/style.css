@@ -101,6 +101,7 @@ navbar-default .navbar-nav>li>a{
     z-index: -1;
     height: 1000px;
     background-color: #f2f2f2;
+    border-bottom: 2px solid blue;
 }
 .about-row{
     position: relative;
@@ -272,6 +273,16 @@ navbar-default .navbar-nav>li>a{
     width: 80%;
     font-size: 16px;
     text-align: justify;
+}
+.website1{
+    max-height: 400px;
+    max-width: 400px;
+}
+.pet-store{
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/website1.png');
+    
 }
 /* ----------End of portfolio---- */
 /* --------Media--------- */
