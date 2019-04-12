@@ -404,7 +404,7 @@ navbar-default .navbar-nav>li>a{
 .form span{
     color:#fff;
     position: relative;
-    top: 20px;
+    top: 10px;
     color:  #7a97d1;
     font-size: 3em;
     font-family: 'Crimson Text', serif;
@@ -413,10 +413,10 @@ navbar-default .navbar-nav>li>a{
 .form-holder{
     box-sizing: border-box;
     width: 500px;
-    height: 310px;
+    height: 340px;
     border: 1px solid white;
     position: relative;
-    top:15%; 
+    top:10%; 
     box-shadow: 0 -20px 50px #000000;
     padding: 20px;
 }
@@ -424,11 +424,22 @@ navbar-default .navbar-nav>li>a{
     color: #fff;
     font-family: 'Lora', serif;
     margin-top: 2px;
-
 }
 .message-box{
     width: 460px;
     height: 80px;
+}
+.submit{
+    position: relative;
+    left: 42%;
+    margin-top: 10px;
+    border-radius: 3px;
+    transition: all .4s;
+    border: none;
+}
+.submit:hover{
+    background-color: #ff751a;
+    transition: all .4s;
 }
 /* ------------end of contact------------ */
 /* ---------------footer---------- */
@@ -462,6 +473,13 @@ navbar-default .navbar-nav>li>a{
 .copy-right{
     color:#e31a6d;
     margin-top: 20px;
+}
+i{
+    transition: all 0.4s;
+}
+i:hover{
+    color: #7a97d1;
+    transition: all 0.4s;
 }
 /* ---------------End of footer----- */
 /* --------Media--------- */
@@ -527,6 +545,13 @@ navbar-default .navbar-nav>li>a{
         position: relative;
         top: -210px;
         left: 70px;
+    }
+    .work{
+        position: relative;
+        top: 20px;
+    }
+    .portfolio{
+        height: 800px;
     }
 }
 
