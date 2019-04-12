@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Merienda');
 @import url('https://fonts.googleapis.com/css?family=Crimson+Text');
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+@import url('https://fonts.googleapis.com/css?family=Lora');
 html{
     scroll-behavior: smooth;
 }
@@ -118,12 +119,9 @@ navbar-default .navbar-nav>li>a{
     font-family: 'Crimson Text', serif;
     color: #1a232f;
     font-size: 3em;
+    border-bottom: 2px solid #7a97d1; 
 }
-.about-underline{
-    height: 2px;
-    width: 90px;
-    background-color:  #7a97d1; 
-}
+
 .bio{
     display: flex;
     justify-content: space-between;
@@ -245,14 +243,9 @@ navbar-default .navbar-nav>li>a{
     font-family: 'Crimson Text', serif;
     position: relative;
     top: 30px;
+    border-bottom: 2px solid #7a97d1; 
 }
-.portfolio-underline{
-    height: 2px;
-    width: 180px;
-    background-color:  #7a97d1; 
-    position: relative;
-    top: 30px;
-}
+
 .work{
     display: flex;
     flex-direction: column;
@@ -342,7 +335,7 @@ navbar-default .navbar-nav>li>a{
     position: relative;
     left: 200px;
     top: 100px;
-    z-index: 10;
+    z-index: 4;
 
 }
 .project-name{
@@ -403,16 +396,39 @@ navbar-default .navbar-nav>li>a{
     width: 100%;
     height: 500px;
     background-color: #242424;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+.form span{
+    color:#fff;
+    position: relative;
+    top: 20px;
+    color:  #7a97d1;
+    font-size: 3em;
+    font-family: 'Crimson Text', serif;
+    border-bottom: 1px solid #fff;
 }
 .form-holder{
     box-sizing: border-box;
     width: 500px;
-    height: 300px;
+    height: 310px;
     border: 1px solid white;
     position: relative;
-    left: 33%;
-    top:15%;
+    top:15%; 
     box-shadow: 0 -20px 50px #000000;
+    padding: 20px;
+}
+.form-holder label{
+    color: #fff;
+    font-family: 'Lora', serif;
+    margin-top: 2px;
+
+}
+.message-box{
+    width: 460px;
+    height: 80px;
 }
 /* ------------end of contact------------ */
 /* ---------------footer---------- */
@@ -588,6 +604,10 @@ navbar-default .navbar-nav>li>a{
         left: -200px;
         top: 60px;
     }
+    .form-holder{
+        width: 300px;
+        height: 110px;
+    }
    
 }
 @media screen and (max-width:400px){
@@ -601,5 +621,14 @@ navbar-default .navbar-nav>li>a{
     }
     .welcome-holder span:nth-child(3){
         font-size: 2.5em;
+    }
+    .form-holder{
+        position: relative;
+        left: -20px;
+        width: 340px;
+        height: 310px;
+    }
+    .message-box{
+        width: 290px;
     }
 }
