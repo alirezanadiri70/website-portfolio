@@ -77,6 +77,7 @@ body{
     top: 0;
     z-index: 20;
     border-bottom: 2px solid #5e81c8;
+    overflow: initial;
 }
 
 .logo{
@@ -101,7 +102,6 @@ body{
 }
 .burger{
     z-index: 20;
-    height: 100px;
 }
 
 /* --------End Nav---------- */
