@@ -278,8 +278,15 @@ navbar-default .navbar-nav>li>a{
     width: 80%;
     font-size: 16px;
     text-align: justify;
+    
 }
+.aau{
+    color: blue;
+}
+.aau:visited{
+    color:#9999ff;
 
+}
 .website{
     display: flex;
     flex-direction: row;
@@ -538,14 +545,13 @@ i:hover{
         width: 400px;
         height: 300px;
     }
-    .portfolio-underline{
-        margin-bottom: 30px;
-    }
+   
 }
 @media screen and (max-width:880px){
     .website{
         display: flex;
         flex-direction: column;
+        height: 700px;
     }
     .website-tags{
         position: relative;
@@ -561,9 +567,7 @@ i:hover{
         position: relative;
         top: 20px;
     }
-    .portfolio{
-        height: 800px;
-    }
+    
 }
 
 @media screen and (max-width:758px){
@@ -586,8 +590,16 @@ i:hover{
         display: flex;
         flex-direction: column;
     }
+    .website-tags{
+        position: relative;
+        left: 100px;
+        top: 100px;
+    }
 }
 @media screen and (max-width:630px){
+    .website{
+        height: 850px;
+    }
     .website-tags{
         position: relative;
         top: -80px;
@@ -630,6 +642,9 @@ i:hover{
         top: 150px;
         left: 90px;
     }
+    .website{
+        height: 950px;
+    }
     .website-tags{
         position: relative;
         top:20px;
@@ -657,6 +672,9 @@ i:hover{
     }
     .welcome-holder span:nth-child(3){
         font-size: 2.5em;
+    }
+    .website{
+        height: 1000px;
     }
     .form-holder{
         position: relative;
