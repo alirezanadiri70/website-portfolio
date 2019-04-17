@@ -135,6 +135,8 @@ nav.navbar{
     justify-content: space-between;
     align-items: center;
     align-content: center;
+    margin: 0;
+    padding:0;
 }
 .bio-holder{
     display: flex;
@@ -666,6 +668,10 @@ i:hover{
    
 }
 @media screen and (max-width:400px){
+    .about-text{
+        position: relative;
+        left: -8px;
+    }
     .bio-holder{
         position: relative;
         /* left: 50px; */
@@ -689,6 +695,13 @@ i:hover{
         left: -20px;
         width: 340px;
         height: 310px;
+    }
+    .bio{
+        position: relative;
+        left: 0px;
+    }
+    .skills{
+        width: 400px;
     }
     .portfolio-text{
         position: relative;
@@ -722,7 +735,7 @@ i:hover{
         align-content: center;
         align-items: center;
         position: relative;
-        left: 40px;
+        left: 60px;
     }
     .restaurante{
         width: 400px;
