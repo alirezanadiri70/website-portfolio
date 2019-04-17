@@ -376,7 +376,8 @@ nav.navbar{
 .restaurante{
     width: 600px;
     height: 400px;
-    background-image: url('../img/restaurante.png');
+    /* background-image: url('../img/restaurante.png'); */
+    display: block;
     background-position: center;
     background-size: cover;
     transition: all 0.5s;
@@ -662,6 +663,9 @@ i:hover{
    
 }
 @media screen and (max-width:400px){
+    body{
+        max-width: 400px;
+    }
     .self-port{
         position: relative;
         left: -15px;
@@ -681,6 +685,41 @@ i:hover{
         left: -20px;
         width: 340px;
         height: 310px;
+    }
+    .portfolio-text{
+        position: relative;
+        left: -30px;
+    }
+    .art{
+        width:400px;
+        position: relative;
+        left: -20px;
+    }
+    .art2{
+        width: 350px;
+        position: relative;
+        left: -20px;
+    }
+    .work > span{
+        width: 300px;
+        position: relative;
+        left: -30px;
+    }
+    .pet-store{
+        width: 280px;
+        position: relative;
+        left: 140px;
+    }
+    /* .restaurante{
+        width: 350px;
+        position: relative;
+        left:190px;
+    } */
+    .text-rest{
+        width: 300px;
+        position: relative;
+        left: 220px;
+        transition: none;
     }
     .message-box{
         width: 290px;
