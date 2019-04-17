@@ -6,6 +6,8 @@
 
 html{
     scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
 }
 body{
     margin: 0 auto;
@@ -286,13 +288,14 @@ nav.navbar{
     color:#9999ff;
 
 }
+
+/* -------petstore------- */
 .website{
     display: flex;
     flex-direction: row;
-    
+    width: 100vw;
 
 }
-/* -------petstore------- */
 .website1{
     height: 400px;
     width: 400px;
