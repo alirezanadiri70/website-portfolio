@@ -134,7 +134,7 @@ nav.navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    align-content: center
+    align-content: center;
 }
 .bio-holder{
     display: flex;
@@ -666,6 +666,10 @@ i:hover{
    
 }
 @media screen and (max-width:400px){
+    .bio-holder{
+        position: relative;
+        /* left: 50px; */
+    }
     .self-port{
         position: relative;
         left: -15px;
