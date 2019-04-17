@@ -706,9 +706,10 @@ i:hover{
         left: -30px;
     }
     .pet-store{
-        width: 280px;
+        width: 360px;
+        height: 300px;
         position: relative;
-        left: 140px;
+        left: 100px;
     }
     .symbol{
         width: 300px;
@@ -720,7 +721,9 @@ i:hover{
         left: 40px;
     }
     .restaurante{
-        max-width: 400px;
+        width: 400px;
+        position: relative;
+        left: 130px;
     } 
     
     .message-box{
