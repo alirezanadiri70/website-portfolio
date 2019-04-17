@@ -303,7 +303,7 @@ nav.navbar{
 .pet-store{
     width: 600px;
     height: 400px;
-    background-image: url('../img/petstore.png');
+    /* background-image: url('../img/petstore.png'); */
     background-position: center;
     background-size: cover;
     transition: all 0.5s;
@@ -719,12 +719,7 @@ i:hover{
     .restaurante{
         max-width: 400px;
     } 
-    .text-rest{
-        width: 300px;
-        position: relative;
-        left: 220px;
-        transition: none;
-    }
+    
     .message-box{
         width: 290px;
     }
