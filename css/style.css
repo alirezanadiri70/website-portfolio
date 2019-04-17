@@ -707,11 +707,18 @@ i:hover{
         position: relative;
         left: 140px;
     }
-    /* .restaurante{
-        width: 350px;
+    .symbol{
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
         position: relative;
-        left:190px;
-    } */
+        left: 40px;
+    }
+    .restaurante{
+        max-width: 400px;
+    } 
     .text-rest{
         width: 300px;
         position: relative;
@@ -720,5 +727,8 @@ i:hover{
     }
     .message-box{
         width: 290px;
+    }
+    .footer{
+        box-shadow: none;
     }
 }
