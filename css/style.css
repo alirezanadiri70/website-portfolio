@@ -663,9 +663,6 @@ i:hover{
    
 }
 @media screen and (max-width:400px){
-    body{
-        max-width: 400px;
-    }
     .self-port{
         position: relative;
         left: -15px;
