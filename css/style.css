@@ -115,12 +115,8 @@ nav.navbar{
 }
 .about-row{
     position: relative;
-   
     top: 50px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
     justify-content: center;
 }
 .about-text{
@@ -237,6 +233,9 @@ nav.navbar{
 }
 /* --------End of home---------- */
 /* ---------Portfolio---------- */
+.portfolio{
+    height: 950px;
+}
 .portfolio-row{
     position: relative;
     top: 20px;
@@ -489,7 +488,7 @@ i:hover{
     }
     
     .portfolio{
-        height: 800px;
+        height: 900px;
     }
     .pet-store{
         width: 300px;
@@ -533,12 +532,42 @@ i:hover{
         width: 400px;
         height: 300px;
     }
+    .portfolio{
+        height: 750px;
+    }
+    .pet-store{
+        width: 300px;
+        height: 200px;
+        position: relative;
+        left: 40px;
+    }
+    .website-tags{
+        position: relative;
+        left: 40px;
+        top: -10px;
+    }
+   .project-name{
+       font-size: 1em;
+   }
+   .website-tags span:nth-child(4){
+       font-size: 1em;
+       text-align: justify;
+   }
+    .restaurante{
+        width: 300px;
+        height: 200px;
+        position: relative;
+        left: 40px;
+    }
    
 }
 @media screen and (max-width:880px){
     .work{
         position: relative;
         top: 20px;
+    }
+    .skills{
+        height: 580px;
     }
     
 }
@@ -568,10 +597,13 @@ i:hover{
     }
     .website{
         position: relative;
-        left: 20px;
+        left: -50px;
     }
+    
     .website-tags{
         display: none;
+        position: relative;
+        top: 15px;
     }
     .pet-store{
         width: 300px;
@@ -585,7 +617,7 @@ i:hover{
 }
 @media screen and (max-width:630px){
     .portfolio{
-        height: 1600px;
+        height: 1400px;
     }
     .website{
         display: flex;
@@ -595,54 +627,57 @@ i:hover{
     .website-tags{
         display: flex;
         flex-direction: column;
-        margin-bottom: 90px;
     }
    
 }
 @media screen and (max-width:439px){
     .about{
-        height: 1750px;
+        height: 1650px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
-    .bio-holder{
+    .portrait{
+        width: 370px;
+        height: 200px;
         position: relative;
-        left: -20px;
+        left: 15px;
     }
     .bio-text{
         width: 250px;
+        position: relative;
+        left: 10px;
+    }
+    .about-text{
+        position: relative;
+        left: -5px;
     }
     .bio{
         display: flex;
         flex-direction: column;
+        align-items: center;
+    }
+    .bio-holder{
         position: relative;
-        left: 25px;
+        left: -10px;
     }
     .skills{
-        position: relative;
-        left: -30px;
         width: 350px;
+        position: relative;
+        left: -8px;
     }
     .symbol{
-        width: 100px;
+        width: 200px;
         display: flex;
         flex-direction: column;
         position: relative;
         top: 150px;
-        left: 90px;
+       
     }
-    /* .website{
-        height: 950px;
+    .portfolio{
+        height: 1450px;
     }
-    .website-tags{
-        position: relative;
-        top:20px;
-        left: -20px;
-    }
-    .website2{
-        position: relative;
-        left: -200px;
-        top: 60px;
-    } */
     .form-holder{
         width: 300px;
         height: 350px;
@@ -654,14 +689,14 @@ i:hover{
    
 }
 @media screen and (max-width:400px){
+    .about{
+        height: 1700px;
+    }
     .about-text{
         position: relative;
         left: -8px;
     }
-    .bio-holder{
-        position: relative;
-        /* left: 50px; */
-    }
+    
     .self-port{
         position: relative;
         left: -15px;
@@ -680,15 +715,14 @@ i:hover{
         width: 340px;
         height: 310px;
     }
-    .bio{
+   
+    .skills{
+        width: 400px;
         position: relative;
         left: 0px;
     }
-    .skills{
-        width: 400px;
-    }
     .portfolio{
-        height: 1650px;
+        height: 1500px;
     }
     .portfolio-text{
         position: relative;
@@ -697,17 +731,18 @@ i:hover{
     .art{
         width:400px;
         position: relative;
-        left: -20px;
+        /* left: -20px; */
     }
     .art2{
         width: 350px;
         position: relative;
-        left: -20px;
+        /* left: -20px; */
     }
+   
     .work > span{
         width: 300px;
         position: relative;
-        left: -30px;
+        left: -7px;
     }
     .symbol{
         width: 100px;
@@ -716,12 +751,13 @@ i:hover{
         align-content: center;
         align-items: center;
         position: relative;
-        left: 60px;
+        
     }
     .website{
         position: relative;
-        left: -20px;
+        left: -45px;
     }
+    
     .message-box{
         width: 290px;
     }
