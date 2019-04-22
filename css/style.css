@@ -115,7 +115,7 @@ nav.navbar{
 }
 .about-row{
     position: relative;
-    left: 10px;
+   
     top: 50px;
     display: flex;
     flex-direction: column;
@@ -239,7 +239,6 @@ nav.navbar{
 /* ---------Portfolio---------- */
 .portfolio-row{
     position: relative;
-    left: 10px;
     top: 20px;
     display: flex;
     flex-direction: column;
@@ -311,13 +310,7 @@ nav.navbar{
     /* background-image: url('../img/petstore.png'); */
     background-position: center;
     background-size: cover;
-    transition: all 0.5s;
     
-}
-.website1:hover a .pet-store,
-.website1:focus a .pet-store{
-    transform:  scale(1.2);
-    transition: all 0.5s ;
 }
 .website1::before {
     content: "";
@@ -385,14 +378,9 @@ nav.navbar{
     display: block;
     background-position: center;
     background-size: cover;
-    transition: all 0.5s;
     
 }
-.website2:hover a .restaurante,
-.website2:focus a .restaurante{
-    transform:  scale(1.2);
-    transition: all 0.5s ;
-}
+
 .website2::before {
     content: "";
     display: none;
@@ -598,8 +586,12 @@ i:hover{
     }
     .website-tags{
         position: relative;
-        left: 100px;
-        top: 100px;
+        left: 180px;
+        top: -280px;
+    }
+    .website2{
+        position: relative;
+        left: -30px;
     }
 }
 @media screen and (max-width:630px){
@@ -642,6 +634,7 @@ i:hover{
         width: 350px;
     }
     .symbol{
+        width: 100px;
         display: flex;
         flex-direction: column;
         position: relative;
@@ -663,7 +656,11 @@ i:hover{
     }
     .form-holder{
         width: 300px;
-        height: 110px;
+        height: 350px;
+    }
+    .message-box{
+        resize: none;
+        width: 260px;
     }
    
 }
@@ -690,6 +687,7 @@ i:hover{
     .website{
         height: 1000px;
     }
+
     .form-holder{
         position: relative;
         left: -20px;
@@ -729,7 +727,7 @@ i:hover{
         left: 100px;
     }
     .symbol{
-        width: 300px;
+        width: 100px;
         display: flex;
         flex-direction: column;
         align-content: center;
