@@ -294,25 +294,22 @@ nav.navbar{
 .website{
     display: flex;
     flex-direction: row;
-    width: 100vw;
+    justify-content: space-around;
+    position: relative;
+    top: 40px;
 
 }
-.website1{
-    height: 400px;
-    width: 400px;
-    position: relative;
-    left:40px;
-    top: 20px;
-}
+
 .pet-store{
-    width: 600px;
-    height: 400px;
+    width: 450px;
+    height: 310px;
     /* background-image: url('../img/petstore.png'); */
     background-position: center;
     background-size: cover;
+    border: 1px solid #000000;
     
 }
-.website1::before {
+/* .website1::before {
     content: "";
     display: none;
     height: 100%;
@@ -322,7 +319,7 @@ nav.navbar{
     left: 0;
     background-color: rgba(52, 73, 94, 80%);
   }
-  
+   */
   .website1:hover a .pet-store,
   .website1:focus a .pet-store::before{
     display: block;
@@ -344,8 +341,7 @@ nav.navbar{
     flex-direction: column;
     align-items: center;
     position: relative;
-    left: 200px;
-    top: 100px;
+    top: 50px;
     z-index: 4;
 
 }
@@ -363,17 +359,10 @@ nav.navbar{
 }
 /* ------------ end of website description------ */
 /* -------restaurante------- */
-.website2{
-    height: 400px;
-    width: 400px;
-    position: relative;
-    left: 100px;
-    top: 50px;
-   
-}
+
 .restaurante{
-    width: 600px;
-    height: 400px;
+    width: 450px;
+    height: 310px;
     /* background-image: url('../img/restaurante.png'); */
     display: block;
     background-position: center;
@@ -497,19 +486,21 @@ i:hover{
 @media  screen and (max-width:1250px){
     .bio{
         display: flex;
-        
     }
-    .website1{
-        position: relative;
-        left: -90px;
+    
+    .portfolio{
+        height: 800px;
     }
-    .website2{
-        position: relative;
-        left: -250px;
+    .pet-store{
+        width: 300px;
+        height: 250px;
     }
-    .website-tags{
-        position: relative;
-        left: -30px;
+    .restaurante{
+        width: 300px;
+        height: 250px;
+    }
+    .footer{
+        box-shadow: none;
     }
 }
 @media screen and (max-width:1204px){
@@ -526,6 +517,10 @@ i:hover{
         position: relative;
         left: 20px;
     }
+    .work{
+        position: relative;
+        top: 20px;
+    }
     .bio{
         display: flex;
         flex-direction: column;
@@ -541,22 +536,6 @@ i:hover{
    
 }
 @media screen and (max-width:880px){
-    
-    .website{
-        display: flex;
-        flex-direction: column;
-        height: 700px;
-    }
-    .website-tags{
-        position: relative;
-        top: -300px;
-        left: 170px;
-    }
-    .website2{
-        position: relative;
-        top: -210px;
-        left: 70px;
-    }
     .work{
         position: relative;
         top: 20px;
@@ -584,30 +563,41 @@ i:hover{
         display: flex;
         flex-direction: column;
     }
+    .portfolio{
+        height: 1050px;
+    }
+    .website{
+        position: relative;
+        left: 20px;
+    }
     .website-tags{
-        position: relative;
-        left: 180px;
-        top: -280px;
+        display: none;
     }
-    .website2{
-        position: relative;
-        left: -30px;
+    .pet-store{
+        width: 300px;
+        height: 200px;
     }
+    .restaurante{
+        width: 300px;
+        height: 200px;
+    }
+    
 }
 @media screen and (max-width:630px){
+    .portfolio{
+        height: 1600px;
+    }
     .website{
-        height: 850px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .website-tags{
-        position: relative;
-        top: -80px;
-        left: px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 90px;
     }
-    .website2{
-        position: relative;
-        left: -150px;
-        top: -40px;
-    }
+   
 }
 @media screen and (max-width:439px){
     .about{
@@ -640,7 +630,7 @@ i:hover{
         top: 150px;
         left: 90px;
     }
-    .website{
+    /* .website{
         height: 950px;
     }
     .website-tags{
@@ -652,7 +642,7 @@ i:hover{
         position: relative;
         left: -200px;
         top: 60px;
-    }
+    } */
     .form-holder{
         width: 300px;
         height: 350px;
@@ -683,9 +673,6 @@ i:hover{
     .welcome-holder span:nth-child(3){
         font-size: 2.5em;
     }
-    .website{
-        height: 1000px;
-    }
 
     .form-holder{
         position: relative;
@@ -699,6 +686,9 @@ i:hover{
     }
     .skills{
         width: 400px;
+    }
+    .portfolio{
+        height: 1650px;
     }
     .portfolio-text{
         position: relative;
@@ -719,12 +709,6 @@ i:hover{
         position: relative;
         left: -30px;
     }
-    .pet-store{
-        width: 360px;
-        height: 300px;
-        position: relative;
-        left: 100px;
-    }
     .symbol{
         width: 100px;
         display: flex;
@@ -734,12 +718,10 @@ i:hover{
         position: relative;
         left: 60px;
     }
-    .restaurante{
-        width: 400px;
+    .website{
         position: relative;
-        left: 130px;
-    } 
-    
+        left: -20px;
+    }
     .message-box{
         width: 290px;
     }
