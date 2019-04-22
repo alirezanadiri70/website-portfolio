@@ -613,10 +613,7 @@ i:hover{
     .about{
         height: 1750px;
     }
-    .about-text,.about-underline{
-        position: relative;
-        left: -35px;
-    }
+
     .bio-holder{
         position: relative;
         left: -20px;
@@ -627,6 +624,8 @@ i:hover{
     .bio{
         display: flex;
         flex-direction: column;
+        position: relative;
+        left: 25px;
     }
     .skills{
         position: relative;
