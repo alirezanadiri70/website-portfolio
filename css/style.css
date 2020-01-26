@@ -252,6 +252,9 @@ nav.navbar{
     position: relative;
     top: 30px;
     border-bottom: 2px solid #7a97d1; 
+    display:flex;
+    justify-content: center;
+    
 }
 
 .work{
@@ -278,7 +281,7 @@ nav.navbar{
 .work > span{
     width: 80%;
     font-size: 16px;
-    text-align: justify;
+    text-align:c;
     
 }
 .aau{
@@ -298,6 +301,10 @@ nav.navbar{
     top: 40px;
 
 }
+/* .website1 {
+    position: relative;
+    left:140px;
+} */
 
 .pet-store{
     width: 450px;
@@ -356,6 +363,10 @@ nav.navbar{
     font-family: 'Playfair Display', serif;
 
 }
+.arts{
+    display:flex;
+    justify-content: space-between;
+}
 /* ------------ end of website description------ */
 /* -------restaurante------- */
 
@@ -366,7 +377,7 @@ nav.navbar{
     display: block;
     background-position: center;
     background-size: cover;
-    
+    /* margin-top:70px; */
 }
 
 .website2::before {
@@ -615,6 +626,7 @@ i:hover{
     }
     
 }
+
 @media screen and (max-width:630px){
     .portfolio{
         height: 1400px;
@@ -629,6 +641,10 @@ i:hover{
         flex-direction: column;
     }
    
+}
+@media screen and (max-width) {
+    .restaurante:
+    margin-top: 20px;
 }
 @media screen and (max-width:439px){
     .about{
