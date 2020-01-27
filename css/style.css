@@ -475,6 +475,11 @@ nav.navbar{
     background-color: #ff751a;
     transition: all .4s;
 }
+.email{
+    font-size: 30px;
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+}
 /* ------------end of contact------------ */
 /* ---------------footer---------- */
 .footer{
@@ -729,6 +734,9 @@ i:hover{
     .message-box{
         resize: none;
         width: 260px;
+    }
+    .email{
+        font-size: 20px;
     }
    
 }
